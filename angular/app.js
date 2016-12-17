@@ -78,13 +78,13 @@ function showControllerFunction($state, $stateParams, Car, Photo) {
 
 
 function photoFactory($resource){
-  return $resource("http://localhost:3000/photos/:id", {}, {
+  return $resource("https://lit-inlet-66458.herokuapp.com/photos/:id", {}, {
       update: { method: "PUT"}
   })
 }
 
 function Callback($resource){
-  return $resource("http://localhost:3000/cars/:id", {}, {
+  return $resource("https://lit-inlet-66458.herokuapp.com/cars/:id", {}, {
       update: { method: "PUT"}
   })
 }
