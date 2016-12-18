@@ -79,19 +79,19 @@ function Router($stateProvider) {
   $stateProvider
   .state("welcome", {
     url: "/welcome",
-    templateUrl: "./angular/ng-views/welcome.html",
+    templateUrl: "./ng-views/welcome.html",
     controller: "indexController",
     controllerAs: "vm"
   })
   .state("index", {
     url: "/cars",
-    templateUrl: "./angular/ng-views/index.html",
+    templateUrl: "./ng-views/index.html",
     controller: "indexController",
     controllerAs: "vm"
   })
   .state("show", {
     url: "/cars/:id",
-    templateUrl: "./angular/ng-views/show.html",
+    templateUrl: "./ng-views/show.html",
     controller: "showController",
     controllerAs: "vm"
   })
